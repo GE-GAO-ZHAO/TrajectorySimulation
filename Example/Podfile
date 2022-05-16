@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'TrajectorySimulation_Example' do
+  pod 'TrajectorySimulation', :path => '../'
+
+  target 'TrajectorySimulation_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
