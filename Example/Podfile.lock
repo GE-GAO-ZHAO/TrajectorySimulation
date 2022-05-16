@@ -1,0 +1,23 @@
+PODS:
+  - SSZipArchive (2.4.3)
+  - TrajectorySimulation (0.0.1):
+    - SSZipArchive
+
+DEPENDENCIES:
+  - TrajectorySimulation (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - SSZipArchive
+
+EXTERNAL SOURCES:
+  TrajectorySimulation:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
+  TrajectorySimulation: e95b06715079d3856278c9401c7112973bb70ef2
+
+PODFILE CHECKSUM: de1a1852e907155f94c5d5b59fda94541d376f9c
+
+COCOAPODS: 1.11.0

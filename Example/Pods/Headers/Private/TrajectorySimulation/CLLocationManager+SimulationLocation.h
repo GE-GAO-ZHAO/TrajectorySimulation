@@ -1,0 +1,1 @@
+../../../../../TrajectorySimulation/Classes/TrajectorySimulation/CLLocationManager+SimulationLocation.h

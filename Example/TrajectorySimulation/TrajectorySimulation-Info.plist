@@ -24,6 +24,17 @@
 	<string>1.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>路侧app希望您同意后台定位功能</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>路侧app希望您同意定位功能</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>路侧app希望您同意访问相册功能</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>fetch</string>
+		<string>location</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

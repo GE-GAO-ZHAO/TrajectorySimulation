@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55EDC6EF4E837EE61EA7D64C /* libPods-TrajectorySimulation_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08D4E2D471456C9F8CCFE8A3 /* libPods-TrajectorySimulation_Tests.a */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -22,8 +23,7 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		E2AD12AA54114C9150648C84 /* Pods_TrajectorySimulation_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C07274F2480F93DDAF40FE2A /* Pods_TrajectorySimulation_Tests.framework */; };
-		EC6B4F58A1E8CDCCB261940C /* Pods_TrajectorySimulation_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 210BF02C58A1708CE3DB87F4 /* Pods_TrajectorySimulation_Example.framework */; };
+		FD601739168ED18294A4FF7E /* libPods-TrajectorySimulation_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3147B5E26ED7F7E041170AD /* libPods-TrajectorySimulation_Example.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,12 +36,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		83438377283250DB00AB814D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		132A885D58C1C6FACD798E1A /* TrajectorySimulation.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = TrajectorySimulation.podspec; path = ../TrajectorySimulation.podspec; sourceTree = "<group>"; };
+		08D4E2D471456C9F8CCFE8A3 /* libPods-TrajectorySimulation_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TrajectorySimulation_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		132A885D58C1C6FACD798E1A /* TrajectorySimulation.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TrajectorySimulation.podspec; path = ../TrajectorySimulation.podspec; sourceTree = "<group>"; };
 		140A0694B20785FD7198A34B /* Pods-TrajectorySimulation_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrajectorySimulation_Tests.release.xcconfig"; path = "Target Support Files/Pods-TrajectorySimulation_Tests/Pods-TrajectorySimulation_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		210BF02C58A1708CE3DB87F4 /* Pods_TrajectorySimulation_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrajectorySimulation_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		580235CDFB67D8E14005F17A /* Pods-TrajectorySimulation_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrajectorySimulation_Tests.debug.xcconfig"; path = "Target Support Files/Pods-TrajectorySimulation_Tests/Pods-TrajectorySimulation_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		59F21BCDFB9D93DADA13EF01 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		59F21BCDFB9D93DADA13EF01 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* TrajectorySimulation_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrajectorySimulation_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,10 +75,11 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		6B52F3490BCDE0E148802753 /* Pods-TrajectorySimulation_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrajectorySimulation_Example.debug.xcconfig"; path = "Target Support Files/Pods-TrajectorySimulation_Example/Pods-TrajectorySimulation_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		872E056EE52761B9D5397376 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		83438379283250DB00AB814D /* libaa.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libaa.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		872E056EE52761B9D5397376 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C07274F2480F93DDAF40FE2A /* Pods_TrajectorySimulation_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrajectorySimulation_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C785BD28CD02A0D756851A44 /* Pods-TrajectorySimulation_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrajectorySimulation_Example.release.xcconfig"; path = "Target Support Files/Pods-TrajectorySimulation_Example/Pods-TrajectorySimulation_Example.release.xcconfig"; sourceTree = "<group>"; };
+		E3147B5E26ED7F7E041170AD /* libPods-TrajectorySimulation_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TrajectorySimulation_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +90,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				EC6B4F58A1E8CDCCB261940C /* Pods_TrajectorySimulation_Example.framework in Frameworks */,
+				FD601739168ED18294A4FF7E /* libPods-TrajectorySimulation_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +101,14 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				E2AD12AA54114C9150648C84 /* Pods_TrajectorySimulation_Tests.framework in Frameworks */,
+				55EDC6EF4E837EE61EA7D64C /* libPods-TrajectorySimulation_Tests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83438376283250DB00AB814D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,7 +123,6 @@
 				580235CDFB67D8E14005F17A /* Pods-TrajectorySimulation_Tests.debug.xcconfig */,
 				140A0694B20785FD7198A34B /* Pods-TrajectorySimulation_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -124,6 +143,7 @@
 			children = (
 				6003F58A195388D20070C39A /* TrajectorySimulation_Example.app */,
 				6003F5AE195388D20070C39A /* TrajectorySimulation_Tests.xctest */,
+				83438379283250DB00AB814D /* libaa.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,8 +155,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				210BF02C58A1708CE3DB87F4 /* Pods_TrajectorySimulation_Example.framework */,
-				C07274F2480F93DDAF40FE2A /* Pods_TrajectorySimulation_Tests.framework */,
+				E3147B5E26ED7F7E041170AD /* libPods-TrajectorySimulation_Example.a */,
+				08D4E2D471456C9F8CCFE8A3 /* libPods-TrajectorySimulation_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -208,7 +228,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				2C8C017096DAC0A51A752B2F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -238,6 +257,23 @@
 			productReference = 6003F5AE195388D20070C39A /* TrajectorySimulation_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		83438378283250DB00AB814D /* aa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8343837F283250DB00AB814D /* Build configuration list for PBXNativeTarget "aa" */;
+			buildPhases = (
+				83438375283250DB00AB814D /* Sources */,
+				83438376283250DB00AB814D /* Frameworks */,
+				83438377283250DB00AB814D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = aa;
+			productName = aa;
+			productReference = 83438379283250DB00AB814D /* libaa.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -248,8 +284,16 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "葛高召";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = FA7354VW7Z;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
+					};
+					83438378283250DB00AB814D = {
+						CreatedOnToolsVersion = 13.0;
+						DevelopmentTeam = FA7354VW7Z;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -258,6 +302,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -268,6 +313,7 @@
 			targets = (
 				6003F589195388D20070C39A /* TrajectorySimulation_Example */,
 				6003F5AD195388D20070C39A /* TrajectorySimulation_Tests */,
+				83438378283250DB00AB814D /* aa */,
 			);
 		};
 /* End PBXProject section */
@@ -317,24 +363,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		2C8C017096DAC0A51A752B2F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TrajectorySimulation_Example/Pods-TrajectorySimulation_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/TrajectorySimulation/TrajectorySimulation.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TrajectorySimulation.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TrajectorySimulation_Example/Pods-TrajectorySimulation_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		425E333EEACF00D17DD4A307 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -375,6 +403,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F5BC195388D20070C39A /* Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83438375283250DB00AB814D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,11 +529,12 @@
 			baseConfigurationReference = 6B52F3490BCDE0E148802753 /* Pods-TrajectorySimulation_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FA7354VW7Z;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TrajectorySimulation/TrajectorySimulation-Prefix.pch";
 				INFOPLIST_FILE = "TrajectorySimulation/TrajectorySimulation-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TrajectorySimulation.cn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
@@ -510,11 +546,12 @@
 			baseConfigurationReference = C785BD28CD02A0D756851A44 /* Pods-TrajectorySimulation_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FA7354VW7Z;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TrajectorySimulation/TrajectorySimulation-Prefix.pch";
 				INFOPLIST_FILE = "TrajectorySimulation/TrajectorySimulation-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TrajectorySimulation.cn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
@@ -567,6 +604,81 @@
 			};
 			name = Release;
 		};
+		83438380283250DB00AB814D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = FA7354VW7Z;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		83438381283250DB00AB814D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = FA7354VW7Z;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -593,6 +705,15 @@
 			buildConfigurations = (
 				6003F5C3195388D20070C39A /* Debug */,
 				6003F5C4195388D20070C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8343837F283250DB00AB814D /* Build configuration list for PBXNativeTarget "aa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83438380283250DB00AB814D /* Debug */,
+				83438381283250DB00AB814D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

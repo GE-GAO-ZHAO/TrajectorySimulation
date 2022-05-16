@@ -1,0 +1,6 @@
+framework module TrajectorySimulation {
+  umbrella header "TrajectorySimulation-umbrella.h"
+
+  export *
+  module * { export * }
+}
