@@ -32,7 +32,7 @@ pod 'TrajectorySimulation'
 
 ## Author
 
-葛高召, gaozhao.ge@huolala.cn
+葛高召
 
 ## License
 
