@@ -33,8 +33,8 @@
 - (void)locationUpdateSuccessWith:(CLLocation *)location {
     NSLog(@"Business:gps录制 Event:gps回调信息 [lon:%6f,lat:%6f]",location.coordinate.longitude , location.coordinate.latitude);
     if (CLLocationCoordinate2DIsValid(location.coordinate)) {
-        GZLocation *hllLocation = [[GZLocation alloc] initWith:location];
-        NSString *gpsInfo = [hllLocation GZYY_modelToJSONString];
+        GZLocation *gzLocation = [[GZLocation alloc] initWith:location];
+        NSString *gpsInfo = [gzLocation GZYY_modelToJSONString];
         [self writeWithContent:gpsInfo];
     } else {
         NSLog(@"Business:gps录制 Event:gps回调信息不处理 原因: 匹配点已达到终点或者经纬度信息异常");

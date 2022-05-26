@@ -10,7 +10,7 @@
 
 @implementation NSObject (MethodSwizzle)
 
-+ (void)hll_swizzleClassMethodWithOriginSel:(SEL)oriSel swizzledSel:(SEL)swiSel {
++ (void)gz_swizzleClassMethodWithOriginSel:(SEL)oriSel swizzledSel:(SEL)swiSel {
     Class cls = object_getClass(self);
     
     Method originAddObserverMethod = class_getClassMethod(cls, oriSel);
@@ -19,7 +19,7 @@
     [self swizzleMethodWithOriginSel:oriSel oriMethod:originAddObserverMethod swizzledSel:swiSel swizzledMethod:swizzledAddObserverMethod class:cls];
 }
 
-+ (void)hll_swizzleInstanceMethodWithOriginSel:(SEL)oriSel swizzledSel:(SEL)swiSel {
++ (void)gz_swizzleInstanceMethodWithOriginSel:(SEL)oriSel swizzledSel:(SEL)swiSel {
     Method originAddObserverMethod = class_getInstanceMethod(self, oriSel);
     Method swizzledAddObserverMethod = class_getInstanceMethod(self, swiSel);
     

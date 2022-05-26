@@ -56,7 +56,7 @@ static GZTrajectorySimulationMiddieware *instance;
 }
 
 - (void)swizzleCLLocationMangagerDelegate {
-    [[CLLocationManager class] hll_swizzleInstanceMethodWithOriginSel:@selector(setDelegate:) swizzledSel:@selector(hll_swizzleLocationDelegate:)];
+    [[CLLocationManager class] gz_swizzleInstanceMethodWithOriginSel:@selector(setDelegate:) swizzledSel:@selector(gz_swizzleLocationDelegate:)];
 }
 
 - (void)mockPoint:(GZLocation *)location {

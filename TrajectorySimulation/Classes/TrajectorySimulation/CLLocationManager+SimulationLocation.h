@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CLLocationManager (SimulationLocation)
 
-- (void)hll_swizzleLocationDelegate:(id)delegate;
+- (void)gz_swizzleLocationDelegate:(id)delegate;
 
 @end
 

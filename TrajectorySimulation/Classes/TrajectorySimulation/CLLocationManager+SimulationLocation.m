@@ -12,9 +12,9 @@
 @implementation CLLocationManager (SimulationLocation)
 
 
-- (void)hll_swizzleLocationDelegate:(id)delegate {
+- (void)gz_swizzleLocationDelegate:(id)delegate {
     if (delegate) {
-        [self hll_swizzleLocationDelegate:[GZTrajectorySimulationMiddieware shareInstance]];
+        [self gz_swizzleLocationDelegate:[GZTrajectorySimulationMiddieware shareInstance]];
         [[GZTrajectorySimulationMiddieware shareInstance] addLocationBinder:self delegate:delegate];
         Protocol *proto = objc_getProtocol("CLLocationManagerDelegate");
         unsigned int count;
@@ -30,7 +30,7 @@
         free(methods);
         
     } else {
-        [self hll_swizzleLocationDelegate:delegate];
+        [self gz_swizzleLocationDelegate:delegate];
     }
 }
 
