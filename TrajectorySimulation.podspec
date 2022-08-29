@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TrajectorySimulation'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'A short description of TrajectorySimulation.'
 
 # This description is used to generate tags and improve search results.
@@ -35,6 +35,7 @@ TODO: Add long description of the pod here.
   # s.resource_bundles = {
   #   'TrajectorySimulation' => ['TrajectorySimulation/Assets/*.png']
   # }
+  s.resources = "TrajectorySimulation/Assets/GpsInfoResource.bundle"
 
   s.dependency 'SSZipArchive'
   # s.public_header_files = 'Pod/Classes/**/*.h'
