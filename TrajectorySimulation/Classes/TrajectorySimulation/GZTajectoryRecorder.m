@@ -17,14 +17,11 @@
 
 - (void)startRecordGPS {
     [self createNewGPSFile];
-    if (![[GZGpsCollector sharedInstance] locationEnabled])
-    { [[GZGpsCollector sharedInstance] startLocationService]; }
     [[GZGpsCollector sharedInstance] addLocationListener:self];
 }
 
 - (void)stopRecordGPS {
     [[GZGpsCollector sharedInstance] removeLocationListener:self];
-    [GZGpsCollector destory];
 }
 
 #pragma mark --

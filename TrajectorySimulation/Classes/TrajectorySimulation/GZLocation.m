@@ -40,7 +40,9 @@
             _courseAccuracy = 0.f;
         }
         _speed = location.speed;
-        _speedAccuracy = location.speedAccuracy;
+        if (@available(iOS 10.0, *)) {
+            _speedAccuracy = (double)location.speedAccuracy;
+        }
         _timestamp = ([location.timestamp timeIntervalSince1970]*1000);
         
         _floor = [[GZFloor alloc] init];

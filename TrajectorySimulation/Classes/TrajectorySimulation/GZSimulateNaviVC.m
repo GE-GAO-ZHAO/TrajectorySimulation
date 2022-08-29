@@ -26,7 +26,7 @@
 }
 
 - (void)dealloc {
-    NSLog(@"==== GZSimulateNaviVC dealloc ====");
+    NSLog(@"==== HLLSimulateNaviVC dealloc ====");
 }
 
 #pragma mark --
