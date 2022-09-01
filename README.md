@@ -20,6 +20,7 @@ it, simply add the following line to your Podfile:
 ## 使用步骤
 #### 第一步：
 ```ruby
+source 'git@github.com:GE-GAO-ZHAO/GGZSpec.git'
 pod 'TrajectorySimulation'
 ```
 #### 第二步： 
